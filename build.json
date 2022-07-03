@@ -1,0 +1,19 @@
+{
+    "name": "Default Project",
+    "version": "1.0",
+    "developers": [
+        "devrusty"
+    ],
+    "description": "",
+    "tags": [
+        "template"
+    ],
+    "production": false,
+    "assets": "./assets/",
+    "window": {
+        "width": 800,
+        "height": 600,
+        "fullscreen": false,
+        "resizable": true
+    }
+}

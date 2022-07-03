@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Rusts2D Settings -->
+    <!-- Set this to the name of your project -->
+    <setting class="rusts2dsetting" name="name" value="Default Project"></setting>
+    <!-- If you're testing, please set this to true, for production set this to false -->
+    <setting class="rusts2dsetting" name="production" value="false"></setting>
+    <!-- Canvas Size (width * height = area) -->
+    <setting class="rusts2dsetting" name="csize" value="1000x500"></setting>
+</head>
+<body>
+    <!-- Enviornment -->
+    <div id="root">
+        <!-- If you're adding topbar buttons and would like to publicly relase it as a plugin, please use GUIService.CreateDevTopBarButton -->
+        <!-- Any element with the class of "dev-obj" will be hidden when production is set to true -->
+        <div id="development-topbar" class="dev-obj">
+            <button title="Get help from the documentation" class="dev-topbar-btn">
+                <a href="">Help</a>
+            </button>
+            <button title="Reload this page" class="dev-topbar-btn">
+                <a onclick="location.reload()">Reload</a>
+            </button>
+        </div>
+        <canvas id="game-canvas" title="Game"></canvas>
+        <fieldset id="game-hierachy" class="dev-obj" title="Hierachy">
+            <legend>Hierachy</legend>
+            <ul id="game-objects"></ul>
+        </fieldset>
+        <fieldset id="game-output" class="dev-obj" title="Output">
+            <legend>Output</legend>
+            <ul id="game-logs"></ul>
+        </fieldset>
+    </div>
+
+    <!-- Core Includes -->
+    <link href="./index.css" rel="stylesheet">
+    <script src="./rusts2d.js" type="module"></script>
+
+    <!-- Please include custom scripts below this line -->
+    <!--<script src="./scripts/World.js" type="module"></script>-->
+    <!--<script src="./scripts/Drums.js" type="module"></script>-->
+    <script src="./scripts/Scene.js" type="module"></script>
+</body>
+</html>

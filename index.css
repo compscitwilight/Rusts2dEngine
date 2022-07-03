@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Source+Code+Pro:wght@300&family=Source+Sans+Pro:wght@600&display=swap');
+
+* {
+    font-family: 'Source Code Pro', monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(90, 90, 90);
+}
+
+/* Development Topbar */
+#development-topbar {
+    background-color: rgb(68, 68, 68);
+    padding: 10px 12px;
+}
+
+.dev-topbar-btn {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    padding: 6px;
+}
+
+.dev-topbar-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Canvas */
+#game-canvas {
+    border: solid #fff .5px;
+    background-color: white;
+}
+
+#game-canvas:hover {
+    border-width: 2px;
+}
+
+/* Output */
+#game-output {
+    border: solid #fff .5px;
+}
+
+#game-output legend {
+    color: white;
+}
+
+.log {
+    color: white;
+    list-style: none;
+}
+
+.warning {
+    color: yellow;
+    list-style: none;
+}
+
+.error {
+    color: red;
+    list-style: none;
+}
+
+.sysmsg {
+    color: blue;
+    list-style: none;
+}
+
+/* Hierachy */
+#game-hierachy {
+    border-color: white;
+    overflow: hidden;
+}
+
+#game-hierachy legend {
+    color: white;
+}
+
+.hierachy-object {
+    color: white;
+    list-style: none;
+    user-select: none;
+}
+
+.hierachy-object:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+.hierachy-object:active {
+    color: orange;
+}
